@@ -1,0 +1,17 @@
+ id |     nombre      |   estado    
+----+-----------------+-------------
+  1 | Juan Perez      | APROBADA
+  2 | Maria Gonzalez  | EN_REVISION
+  3 | Pedro Ramirez   | APROBADA
+  4 | Ana Martinez    | RECIBIDA
+  5 | Carlos Soto     | RECIBIDA
+  6 | Laura Fernandez | RECIBIDA
+  7 | Roberto Silva   | RECIBIDA
+  8 | Camila Torres   | RECIBIDA
+(8 rows)
+
+ total_postulaciones | total_rechazadas | postulaciones_reincorporadas 
+---------------------+------------------+------------------------------
+                   8 |                0 |                            3
+(1 row)
+

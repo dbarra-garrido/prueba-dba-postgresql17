@@ -1,0 +1,17 @@
+﻿ id |     nombre      |   estado    |       fecha_postulacion       
+----+-----------------+-------------+-------------------------------
+  1 | Juan Perez      | APROBADA    | 2026-11-01 21:22:35.312293+00
+  2 | Maria Gonzalez  | EN_REVISION | 2026-11-01 21:22:35.312293+00
+  3 | Pedro Ramirez   | APROBADA    | 2026-11-01 21:22:35.312293+00
+  4 | Ana Martinez    | RECIBIDA    | 2026-11-01 21:22:35.312293+00
+  5 | Carlos Soto     | RECIBIDA    | 2026-11-01 21:22:35.312293+00
+  6 | Laura Fernandez | RECIBIDA    | 2026-11-01 21:26:04.942347+00
+  7 | Roberto Silva   | RECIBIDA    | 2026-11-01 21:26:04.942347+00
+  8 | Camila Torres   | RECIBIDA    | 2026-11-01 21:26:04.942347+00
+(8 rows)
+
+ total_postulaciones | rechazadas 
+---------------------+------------
+                   8 |          0
+(1 row)
+

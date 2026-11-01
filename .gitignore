@@ -1,0 +1,16 @@
+﻿.env
+.env.*
+!.env.example
+*.log
+*.bak
+*.tmp
+__pycache__/
+.vscode/
+.idea/
+postgres_data/
+pgbackrest_repo/
+*.dump
+*.backup
+*.tar
+*.zip
+respaldo_pre_pitr/

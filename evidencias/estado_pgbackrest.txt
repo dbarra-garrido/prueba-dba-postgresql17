@@ -1,0 +1,12 @@
+﻿stanza: lab
+    status: ok
+    cipher: none
+
+    db (current)
+        wal archive min/max (17): 000000010000000000000001/000000020000000000000004
+
+        full backup: 20261101-034157F
+            timestamp start/stop: 2026-11-01 03:41:57+00 / 2026-11-01 03:42:02+00
+            wal start/stop: 000000010000000000000003 / 000000010000000000000003
+            database size: 29.4MB, database backup size: 29.4MB
+            repo1: backup set size: 3.8MB, backup size: 3.8MB

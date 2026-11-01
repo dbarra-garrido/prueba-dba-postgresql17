@@ -1,0 +1,32 @@
+﻿name: prueba-dba-postgresql17-demo
+
+services:
+  postgres:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: postgres17-pgbackrest:lab
+    container_name: laboratorio-postgres17-demo
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: dba
+      POSTGRES_PASSWORD: Laboratorio2026
+      POSTGRES_DB: laboratorio
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data_demo:/var/lib/postgresql/data
+      - pgbackrest_repo_demo:/var/lib/pgbackrest
+      - ./pgbackrest.conf:/etc/pgbackrest/pgbackrest.conf:ro
+    command:
+      - postgres
+      - -c
+      - wal_level=replica
+      - -c
+      - archive_mode=on
+      - -c
+      - archive_command=pgbackrest --stanza=lab archive-push %p
+
+volumes:
+  postgres_data_demo:
+  pgbackrest_repo_demo:

@@ -1,0 +1,32 @@
+name: prueba-dba-postgresql17-auto
+
+services:
+  postgres:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: postgres17-pgbackrest:lab
+    container_name: laboratorio-postgres17-auto
+    restart: "no"
+    environment:
+      POSTGRES_USER: dba
+      POSTGRES_PASSWORD: Laboratorio2026
+      POSTGRES_DB: laboratorio
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres_data_auto:/var/lib/postgresql/data
+      - pgbackrest_repo_auto:/var/lib/pgbackrest
+      - ./pgbackrest.conf:/etc/pgbackrest/pgbackrest.conf:ro
+    command:
+      - postgres
+      - -c
+      - wal_level=replica
+      - -c
+      - archive_mode=on
+      - -c
+      - archive_command=pgbackrest --stanza=lab archive-push %p
+
+volumes:
+  postgres_data_auto:
+  pgbackrest_repo_auto:

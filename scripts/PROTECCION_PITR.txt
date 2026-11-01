@@ -1,0 +1,12 @@
+﻿PROTEGIDO
+
+Este laboratorio contiene una base PostgreSQL recuperada
+correctamente mediante PITR.
+
+No ejecutar una nueva restauracion sin:
+1. Confirmar el respaldo de los datos actuales.
+2. Exportar las postulaciones posteriores al incidente.
+3. Verificar la disponibilidad del respaldo pgBackRest.
+4. Autorizar expresamente la restauracion.
+
+Archivo de proteccion del laboratorio.

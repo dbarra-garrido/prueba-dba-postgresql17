@@ -1,0 +1,17 @@
+﻿ id |     nombre      |           correo            |   estado    |       fecha_postulacion       
+----+-----------------+-----------------------------+-------------+-------------------------------
+  1 | Juan Perez      | juan.perez@example.com      | APROBADA    | 2026-11-01 20:55:16.943886+00
+  2 | Maria Gonzalez  | maria.gonzalez@example.com  | EN_REVISION | 2026-11-01 20:55:16.943886+00
+  3 | Pedro Ramirez   | pedro.ramirez@example.com   | APROBADA    | 2026-11-01 20:55:16.943886+00
+  4 | Ana Martinez    | ana.martinez@example.com    | RECIBIDA    | 2026-11-01 20:55:16.943886+00
+  5 | Carlos Soto     | carlos.soto@example.com     | RECIBIDA    | 2026-11-01 20:55:16.943886+00
+  6 | Laura Fernandez | laura.fernandez@example.com | RECIBIDA    | 2026-11-01 20:58:58.455302+00
+  7 | Roberto Silva   | roberto.silva@example.com   | RECIBIDA    | 2026-11-01 20:58:58.455302+00
+  8 | Camila Torres   | camila.torres@example.com   | RECIBIDA    | 2026-11-01 20:58:58.455302+00
+(8 rows)
+
+ total_postulaciones | postulaciones_rechazadas 
+---------------------+--------------------------
+                   8 |                        0
+(1 row)
+
